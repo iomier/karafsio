@@ -5,7 +5,7 @@ import { device } from "../../Style/breakpoints";
 const Hero = () => {
   return (
     <ScHero id="hero-template">
-      <header id="nav">
+      <header>
         <nav>
           <ul>
             <a href="/">خانه</a>
@@ -43,12 +43,11 @@ const ScHero = styled.div`
       ul {
         font-weight: 600;
         display: flex;
-        justify-content: space-around;
-        justify-content: flex-end;
+        justify-content: flex-end !important;
         padding-bottom: 1em;
       }
       a {
-        margin: 0 auto;
+        margin: 0 3rem;
         color: #eee;
         line-height: 1.5;
         list-style-type: none;
@@ -130,6 +129,8 @@ const ScHero = styled.div`
         }
         a {
           padding: 0;
+          margin: 0;
+          flex: 1;
         }
       }
     }
