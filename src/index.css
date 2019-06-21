@@ -47,3 +47,5 @@ body {
 #nav a.router-link-exact-active {
   color: #1a1a1a;
 } */
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";

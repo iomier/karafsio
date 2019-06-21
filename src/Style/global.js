@@ -10,11 +10,18 @@ p {
     line-height: 2.5;
     text-align: justify;
 }
+p, h1, h2,h3,h4,h5 {
+  color:#6B6B6B;
+}
 .row {
     display: flex;
   }
 .col {
     flex: 1;
+  }
+  .text-center {
+    text-align:center !important;
+    
   }
 `;
 

@@ -8,8 +8,10 @@ const Hero = () => {
       <header id="nav">
         <nav>
           <ul>
-            <router-link to="/">Home</router-link>|
-            <router-link to="/about">About</router-link>
+            <a href="/">خانه</a>
+            <a href="#">محاسبه‌ی BMI</a>
+            <a href="#">سرویس</a>
+            <a href="#">بلاگ</a>
           </ul>
         </nav>
       </header>
@@ -36,11 +38,33 @@ const Hero = () => {
 export default Hero;
 
 const ScHero = styled.div`
+  header {
+    nav {
+      ul {
+        font-weight: 600;
+        display: flex;
+        justify-content: space-between;
+        max-width: 45vw;
+        padding-bottom: 1em;
+      }
+      a {
+        color: #eee;
+        line-height: 1.5;
+        list-style-type: none;
+        text-decoration: none;
+        cursor: pointer;
+        :hover {
+          color: ${props => props.theme.secondary};
+        }
+      }
+    }
+  }
   padding: 1em;
-  background: #fff url("https://karafsapp.com/images/firstSectionBanner.png");
+  background: #fff url("https://karafsapp.com/images/firstSectionBanner.png")
+    center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  min-height: 96vh;
   /* background: linear-gradient(
     0deg,
     rgba(80, 193, 250, 1) 0%,
@@ -57,7 +81,7 @@ const ScHero = styled.div`
     position: absolute;
     left: 0;
     padding-left: 2em;
-    width: 40%;
+    max-width: 40%;
     margin: 0 auto;
     h2 {
       color: #fff;
@@ -74,7 +98,7 @@ const ScHero = styled.div`
   .column {
     padding: 2em 0;
     width: 35%;
-    max-width: 100%;
+    min-width: 100%;
 
     img {
       width: 100%;

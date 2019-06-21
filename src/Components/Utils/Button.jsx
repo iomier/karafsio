@@ -42,5 +42,6 @@ const ScButton = styled.button`
       0 2px 5px 0 rgba(0, 0, 0, 0.26);
     background: ${props => (props.primary ? "#f0f0f0" : null)};
     color: ${props => (props.primary ? props.theme.primary : null)};
+    transition: 0.3s;
   }
 `;
