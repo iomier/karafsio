@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Cloudscale } from "styled-icons/fa-brands/Cloudscale";
+import { device } from "../../Style/breakpoints";
 import { Users, Hamburger, Clock } from "styled-icons/fa-solid";
 const BoxPanel = () => {
   return (
@@ -19,12 +20,12 @@ const BoxPanel = () => {
           <div className="row tiles ">
             <div style={{ backgroundColor: "#eee" }} className="col box">
               <ScCloudscale size="48" />
-              <h4>7,231,718 </h4>
+              <h4>۷٬۲۳۱٬۷۱۸</h4>
               <p> ‌کیلوگرم با ما وزن کم کرده‌اند.</p>
             </div>
             <div className="col box">
               <ScUsers size="48" />
-              <h4>1,601,612 </h4>
+              <h4>۱٬۶۰۱٬۶۱۲</h4>
               <p>نفر در سرویس‌های ما ثبت‌نام کرده‌اند.‌</p>
             </div>
           </div>
@@ -32,12 +33,12 @@ const BoxPanel = () => {
             <div className="col box">
               <ScClock size="48" />
 
-              <h4>262,194,312 </h4>
+              <h4>۲۶۲٬۱۹۴٬۳۱۲</h4>
               <p> دقیقه با ما ورزش کرده‌اند.‌</p>
             </div>
             <div style={{ backgroundColor: "#eee" }} className="col box">
               <ScHamburger size="48" />
-              <h4>110,546,348 </h4>
+              <h4>۱۱۰٬۵۴۶٬۳۴۸</h4>
               <p>غذا در سرویس‌های ما ثبت شده است.‌</p>
             </div>
           </div>
@@ -53,7 +54,7 @@ const ScBox = styled.section`
   padding: 1.5em;
 
   .text {
-    margin: 0 4em;
+    margin: 0 auto;
     box-sizing: border-box;
   }
   .box {
@@ -68,6 +69,9 @@ const ScBox = styled.section`
   .box-wrapper {
     align-content: stretch;
     margin: 0 4em;
+  }
+  @media ${device.mobileL} {
+    display: none;
   }
 `;
 

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Button from "../Utils/Button";
-
+import { device } from "../../Style/breakpoints";
 const Hero = () => {
   return (
     <ScHero id="hero-template">
@@ -16,7 +16,7 @@ const Hero = () => {
         </nav>
       </header>
       <div className="heros">
-        <div className="test">
+        <div className="text-block">
           <h2>گام اول سلامتـی</h2>
           <p>
             محصـولات تیـم کرفـس را بـرای آیفـون (اپـل) و سیسـتم عامل اندروید از
@@ -43,11 +43,12 @@ const ScHero = styled.div`
       ul {
         font-weight: 600;
         display: flex;
-        justify-content: space-between;
-        max-width: 45vw;
+        justify-content: space-around;
+        justify-content: flex-end;
         padding-bottom: 1em;
       }
       a {
+        margin: 0 auto;
         color: #eee;
         line-height: 1.5;
         list-style-type: none;
@@ -65,11 +66,6 @@ const ScHero = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 96vh;
-  /* background: linear-gradient(
-    0deg,
-    rgba(80, 193, 250, 1) 0%,
-    rgba(18, 88, 224, 1) 100%
-  ); */
   .heros {
     /* display: flex;
     flex: 1;
@@ -77,12 +73,12 @@ const ScHero = styled.div`
     justify-content: center; */
     position: relative;
   }
-  .test {
+  .text-block {
     position: absolute;
+    margin: 0 auto;
     left: 0;
     padding-left: 2em;
-    max-width: 40%;
-    margin: 0 auto;
+    max-width: 40vw;
     h2 {
       color: #fff;
       font-weight: 600;
@@ -104,7 +100,7 @@ const ScHero = styled.div`
       width: 100%;
     }
   }
-
+  /* 
   .divider {
     background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDBweCIgdmlld0JveD0iMCAwIDEyODAgMTQwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbGw9IiNmZmZmZmYiPjxwYXRoIGQ9Ik0xMDkzLjQ4IDEzMS44NUwxNzMgOTRhNzYuODUgNzYuODUgMCAwIDEtMzYuNzktMTEuNDZMMCAwdjE0MGgxMjgwVjBsLTEzMS44MSAxMTEuNjhjLTE2LjQ3IDEzLjk2LTM1LjQ3IDIwLjk2LTU0LjcxIDIwLjE3eiIvPjwvZz48L3N2Zz4=);
     display: block;
@@ -112,5 +108,30 @@ const ScHero = styled.div`
     bottom: 0;
     height: 100px;
     z-index: 1;
+  } */
+  @media ${device.mobileL} {
+    background-image: none;
+    background-color: ${props => props.theme.primary};
+    .text-block {
+      text-align: center;
+      /* display: none; */
+      position: relative !important;
+      max-width: 100% !important;
+      margin: 0 auto !important;
+      padding: 1em !important;
+      p {
+        line-height: auto;
+      }
+    }
+    header {
+      nav {
+        ul {
+          justify-content: center !important;
+        }
+        a {
+          padding: 0;
+        }
+      }
+    }
   }
 `;

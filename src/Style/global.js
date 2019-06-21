@@ -15,6 +15,7 @@ p, h1, h2,h3,h4,h5 {
 }
 .row {
     display: flex;
+    flex-wrap: wrap;
   }
 .col {
     flex: 1;
