@@ -20,16 +20,24 @@ const FourthSection = () => {
           <h3>کرفس در رسانه‌ها</h3>
           <Slider {...settings} className="io-slider">
             <div>
-              <img src="https://karafsapp.com/images/panevesht.png" alt="" />
+              <a href="http://www.panevesht.com/content/%DA%A9%D8%B1%D9%81%D8%B3-%DA%A9%D8%A7%D9%84%D8%B1%DB%8C-%D8%B4%D9%85%D8%A7%D8%B1">
+                <img src="https://karafsapp.com/images/panevesht.png" alt="" />
+              </a>
             </div>
             <div>
-              <img src="https://karafsapp.com/images/zarebin.png" alt="" />
+              <a href="http://review.izarebin.com/%D9%85%D8%B9%D8%B1%D9%81%DB%8C-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%DA%A9%D8%B1%D9%81%D8%B3.html">
+                <img src="https://karafsapp.com/images/zarebin.png" alt="" />
+              </a>
             </div>
             <div>
-              <img src="https://karafsapp.com/images/webna.png" alt="" />
+              <a href="https://webna.ir/8785/karafs-calorie-meter-app">
+                <img src="https://karafsapp.com/images/webna.png" alt="" />
+              </a>
             </div>
             <div>
-              <img src="https://karafsapp.com/images/digiato.png" alt="" />
+              <a href="http://digiato.com/article/2016/10/24/%D9%85%D8%B9%D8%B1%D9%81%DB%8C-%D8%A7%D9%BE%D9%84%DB%8C%DA%A9%DB%8C%D8%B4%D9%86-%D8%A7%D9%86%D8%AF%D8%B1%D9%88%DB%8C%D8%AF-%DA%A9%D8%B1%D9%81%D8%B3/">
+                <img src="https://karafsapp.com/images/digiato.png" alt="" />
+              </a>
             </div>
           </Slider>
         </div>
