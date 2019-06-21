@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Button from "./Utils/Button";
+import { device } from "../Style/breakpoints";
 
 const SecondSection = () => {
   return (
@@ -14,11 +15,18 @@ const SecondSection = () => {
           کالری مورد نیاز شما را محاسبه نماید.
         </p>
         <div style={{ textAlign: "center" }}>
-          <Button primary text="دریافت اپلیکیشن کرفس" />
+          <Button
+            as="a"
+            href="https://karafsapp.com/products"
+            alt="products"
+            primary
+            text="دریافت اپلیکیشن کرفس"
+          />
         </div>
       </div>
       <div className="col image-wrapper">
         <img
+          className="col"
           src="https://karafsapp.com/images/karafsMobileHomePage.png"
           alt=""
         />
@@ -30,16 +38,23 @@ const SecondSection = () => {
 export default SecondSection;
 
 const ScSecondSection = styled.section`
-  margin: 1.5em;
   padding: 1em;
   .col.text {
     align-self: center;
   }
   .text {
-    margin: 0 4em;
+    margin: 0 auto;
     box-sizing: border-box;
   }
   .image-wrapper {
+    padding: 1.5em;
     text-align: center;
+  }
+  @media ${device.mobileL} {
+    .image-wrapper {
+      img {
+        width: 260px;
+      }
+    }
   }
 `;

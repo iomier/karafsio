@@ -28,13 +28,13 @@ const ScButton = styled.button`
   color: #fff;
   border-width: 0px;
   border-radius: 150px;
-  letter-spacing: 1px;
   font-size: 14px;
-  text-transform: uppercase;
   background-color: ${props =>
     props.primary ? props.theme.primary : props.theme.secondary};
-  padding: 16px 40px;
+  padding: 14px 20px;
+  margin: 0.5em;
   cursor: pointer;
+  display: inline-block;
   text-decoration: none;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
   :hover {

@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Button from "./Utils/Button";
+import { device } from "../Style/breakpoints";
 
 const ThirdSection = () => {
   return (
@@ -31,16 +32,26 @@ const ThirdSection = () => {
 export default ThirdSection;
 
 const ScThirdSection = styled.section`
-  margin: 1.5em;
   padding: 1em;
   .col.text {
     align-self: center;
   }
   .text {
-    margin: 0 4em;
+    margin: 0 auto;
     box-sizing: border-box;
   }
   .image-wrapper {
     text-align: center;
+    padding: 1.5em;
+  }
+  @media ${device.mobileL} {
+    .col.image-wrapper {
+      order: 1;
+    }
+    .image-wrapper {
+      img {
+        width: 260px;
+      }
+    }
   }
 `;
